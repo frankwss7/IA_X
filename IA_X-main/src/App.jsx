@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
@@ -10,9 +10,10 @@ import aiFuture from './assets/ai_future.jpg'
 import bannerPromocional from './assets/banner_promocional.png'
 import LogoIAX from './assets/LogoIA-XMetalizada.png' // Importar a nova logo
 import { ContactForm } from './components/ContactForm.jsx' // Importar o formulário de contato
+import DeliveryIA from './pages/DeliveryIA.jsx'
 import './App.css'
 
-function App() {
+function HomePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleWhatsAppClick = () => {
@@ -226,7 +227,7 @@ function App() {
                 link: "#"
               }
             ].map((product, index) => (
-              <Link to={product.link} key={index}>
+              <a href={product.link} key={index}>
                 <Card className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 h-full">
                   <CardHeader>
                     <div className={`w-12 h-12 bg-gradient-to-r ${product.color} rounded-lg mb-4`}></div>
@@ -236,7 +237,7 @@ function App() {
                     <CardDescription className="text-base">{product.description}</CardDescription>
                   </CardContent>
                 </Card>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -330,9 +331,9 @@ function App() {
                   { name: "Sistema de Delivery com IA", link: "/delivery-ia" },
                   { name: "Consultoria Personalizada", link: "#" }
                 ].map((product, index) => (
-                  <Link key={index} to={product.link} className="block text-blue-400 hover:text-blue-300 transition-colors">
+                  <a key={index} href={product.link} className="block text-blue-400 hover:text-blue-300 transition-colors">
                     {product.name}
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>
@@ -357,5 +358,15 @@ function App() {
   )
 }
 
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/delivery-ia" element={<DeliveryIA />} />
+    </Routes>
+  )
+}
+
 export default App
+
 
