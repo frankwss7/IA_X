@@ -30,7 +30,7 @@ function HomePage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               {/* Substituir o placeholder pela logo */}
-              <img src={LogoIAX} alt="Logo IA-X" className="h-16 w-auto" />
+              <img src={LogoIAX} alt="Logo IA-X" className="h-20 w-auto" />
               <span className="text-xl font-bold text-gray-800">IA-X Gestão e Tecnologia</span>
             </div>
             
@@ -133,10 +133,10 @@ function HomePage() {
               <h2 className="text-4xl font-bold text-gray-900 mb-8">Os Desafios dos Gestores de PMEs</h2>
               <div className="space-y-6">
                 {[
-                  "Falta de clareza sobre como usar IA para aumentar vendas",
-                  "Dificuldade em melhorar gestão com tecnologia", 
-                  "Necessidade de reduzir custos operacionais",
-                  "Gestores sem capacitação prática em IA"
+                  "Falta de clareza estratégica sobre como a IA pode impulsionar vendas e otimizar processos.",
+                  "Dificuldade em identificar e priorizar as áreas de negócio com maior potencial para automação inteligente.",
+                  "Incerteza quanto ao retorno do investimento (ROI) em soluções de IA e como mensurar seus resultados.",
+                  "Implementações de tecnologia que não se alinham com a estratégia global da empresa, gerando silos e ineficiência."
                 ].map((challenge, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></div>
@@ -173,9 +173,9 @@ function HomePage() {
               <h2 className="text-4xl font-bold text-gray-900 mb-8">Nossa Solução Completa</h2>
               <div className="space-y-6">
                 {[
-                  { icon: Users, text: "Formação prática em IA para gestores" },
-                  { icon: Target, text: "Implantação com foco em ROI" },
-                  { icon: CheckCircle, text: "Resultados mensuráveis em 90 dias" }
+                  { icon: Users, text: "**Educação Executiva em IA:** Capacitação prática para gestores aplicarem IA em decisões estratégicas e operacionais, com foco em resultados mensuráveis." },
+                  { icon: Target, text: "**Implantação Prática com Foco em ROI:** Implementação de soluções de IA em processos-chave, priorizando iniciativas com maior potencial de retorno financeiro." },
+                  { icon: CheckCircle, text: "**Alavancagem de Vendas e Eficiência:** Automação e otimização de processos comerciais e financeiros para redução de custos e aumento de receita." }
                 ].map((solution, index) => (
                   <div key={index} className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -296,7 +296,7 @@ function HomePage() {
             <div>
               <div className="flex items-center space-x-2 mb-8">
                 {/* Substituir o placeholder pela logo */}
-                <img src={LogoIAX} alt="Logo IA-X" className="h-16 w-auto" />
+                <img src={LogoIAX} alt="Logo IA-X" className="h-20 w-auto" />
                 <span className="text-xl font-bold">IA-X Gestão e Tecnologia</span>
               </div>
               
@@ -368,7 +368,5 @@ function App() {
 }
 
 export default App
-
-
 
 
