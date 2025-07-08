@@ -8,7 +8,7 @@ import modernBusinessAI from './assets/modern_business_ai.png'
 import aiBusiness from './assets/ai_business.jpg'
 import aiFuture from './assets/ai_future.jpg'
 import bannerPromocional from './assets/banner_promocional.png'
-import LogoIAX from './assets/LogoIA-XMetalizada.png' // Importar a nova logo
+import LogoIAX from './assets/MarcaIA-XCromada.png' // Importar a nova logo
 import { ContactForm } from './components/ContactForm.jsx' // Importar o formulário de contato
 import DeliveryIA from './pages/DeliveryIA.jsx'
 import './App.css'
@@ -17,7 +17,7 @@ function HomePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '55859925756556'; // Número de telefone com código do país e DDD
+    const phoneNumber = '5585992756556'; // Número de telefone com código do país e DDD
     const message = encodeURIComponent('Quero transformar minha gestão com IA');
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
@@ -30,8 +30,8 @@ function HomePage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               {/* Substituir o placeholder pela logo */}
-              <img src={LogoIAX} alt="Logo IA_X" className="h-12 w-auto" />
-              <span className="text-xl font-bold text-gray-800">IA_X Gestão e Tecnologia</span>
+              <img src={LogoIAX} alt="Logo IA-X" className="h-16 w-auto" />
+              <span className="text-xl font-bold text-gray-800">IA-X Gestão e Tecnologia</span>
             </div>
             
             <nav className="hidden md:flex space-x-8">
@@ -296,8 +296,8 @@ function HomePage() {
             <div>
               <div className="flex items-center space-x-2 mb-8">
                 {/* Substituir o placeholder pela logo */}
-                <img src={LogoIAX} alt="Logo IA_X" className="h-12 w-auto" />
-                <span className="text-xl font-bold">IA_X Gestão e Tecnologia</span>
+                <img src={LogoIAX} alt="Logo IA-X" className="h-16 w-auto" />
+                <span className="text-xl font-bold">IA-X Gestão e Tecnologia</span>
               </div>
               
               <p className="text-lg text-gray-300 mb-8">
@@ -340,14 +340,14 @@ function HomePage() {
           </div>
           
           <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-            <p className="text-gray-400">© 2025 IA_X Gestão e Tecnologia. Todos os direitos reservados.</p>
+            <p className="text-gray-400">© 2025 IA-X Gestão e Tecnologia. Todos os direitos reservados.</p>
           </div>
         </div>
       </section>
 
       {/* Floating WhatsApp Button */}
       <a 
-        href="https://wa.me/55859925756556" 
+        href="https://wa.me/5585992756556" 
         className="whatsapp-button" 
         target="_blank" 
         rel="noopener noreferrer"
@@ -368,5 +368,7 @@ function App() {
 }
 
 export default App
+
+
 
 
