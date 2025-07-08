@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LogoIAX from '../assets/MarcaIA-XCromada.png';
 
 const DeliveryIA = () => {
   return (
@@ -7,6 +8,9 @@ const DeliveryIA = () => {
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
         <div className="container mx-auto px-4">
+          <div className="flex justify-center mb-10">
+            <img src={LogoIAX} alt="Logo IA-X" className="h-24 w-auto" />
+          </div>
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-10 md:mb-0">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">Sistema de Delivery Inteligente com IA via WhatsApp</h1>
@@ -311,3 +315,4 @@ const DeliveryIA = () => {
 };
 
 export default DeliveryIA;
+
