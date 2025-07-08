@@ -203,8 +203,8 @@ function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                title: "Curso de Formação de Gestores",
-                description: "Capacitação completa em IA para líderes empresariais",
+                title: "Implantação da Célula de I.A. para empresas",
+                description: "Crie e desenvolva todo setor de I.A na sua empresa",
                 color: "from-blue-500 to-blue-600",
                 link: "#"
               },
@@ -221,8 +221,8 @@ function HomePage() {
                 link: "/delivery-ia"
               },
               {
-                title: "Consultoria Personalizada",
-                description: "Atendimento especializado para suas necessidades",
+                title: "Formação e Capacitação dos Líderes de I.A.",
+                description: "Formação completa de Líderes de I.A para empresas",
                 color: "from-orange-500 to-orange-600",
                 link: "#"
               }
