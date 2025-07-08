@@ -68,7 +68,7 @@ function HomePage() {
               </h1>
               
               <p className="text-xl text-gray-600 leading-relaxed">
-                Capacitamos gestores de PMEs a aplicarem IA de forma estratégica para alavancar vendas, 
+                Capacitamos gestores de empresas a aplicarem IA de forma estratégica para alavancar vendas, 
                 melhorar gestão e reduzir custos. <strong>Produtividade, vendas e lucro em outro patamar.</strong>
               </p>
               
@@ -130,7 +130,7 @@ function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-8">Os Desafios dos Gestores de PMEs</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-8">Os Desafios dos Gestores</h2>
               <div className="space-y-6">
                 {[
                   "Falta de clareza estratégica sobre como a IA pode impulsionar vendas e otimizar processos.",
