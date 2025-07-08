@@ -45,7 +45,7 @@ const DeliveryIA = () => {
                 Sistema de Delivery Inteligente com IA
               </h1>
               <p className="text-xl mb-8 text-gray-200 leading-relaxed">
-                Transforme seu restaurante com nossa solução completa de atendimento e gestão de pedidos automatizada via WhatsApp. 
+                Transforme sua empresa com nossa solução completa de atendimento e gestão de pedidos automatizada via WhatsApp. 
                 Setup personalizado + mensalidade recorrente com orçamento sob medida.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -72,7 +72,7 @@ const DeliveryIA = () => {
               Benefícios Comprovados para Sua Empresa
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Nossa solução de IA para delivery já transformou centenas de restaurantes, 
+              Nossa solução de IA para delivery já transformou centenas de empresas, 
               proporcionando resultados mensuráveis e crescimento sustentável.
             </p>
           </div>
@@ -171,7 +171,7 @@ const DeliveryIA = () => {
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Oferecemos uma solução única e personalizada que combina setup inicial completo 
-              com mensalidade recorrente adaptada às necessidades do seu restaurante.
+              com mensalidade recorrente adaptada às necessidades do sua empresa.
             </p>
           </div>
           
@@ -297,7 +297,7 @@ const DeliveryIA = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Entre em Contato</h2>
             <p className="text-xl text-blue-200 max-w-4xl mx-auto leading-relaxed">
               Solicite seu orçamento personalizado e descubra como podemos transformar 
-              as operações de delivery do seu restaurante com nossa solução de IA.
+              as operações de delivery da sua empresa com nossa solução de IA.
             </p>
           </div>
           
