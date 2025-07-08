@@ -69,7 +69,7 @@ const DeliveryIA = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-              Benefícios Comprovados para Seu Restaurante
+              Benefícios Comprovados para Sua Empresa
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Nossa solução de IA para delivery já transformou centenas de restaurantes, 
