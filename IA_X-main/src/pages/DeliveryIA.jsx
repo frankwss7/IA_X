@@ -4,7 +4,6 @@ import LogoIAX from '../assets/MarcaIA-XCromada.png';
 import AIBrain from '../assets/ai_brain.jpg';
 import AICustomerService from '../assets/ai_customer_service.jpg';
 import AIRestaurant from '../assets/ai_restaurant.jpg';
-import BackgroundRestaurant from '../assets/background_restaurant.webp';
 
 const DeliveryIA = () => {
   return (
@@ -26,14 +25,16 @@ const DeliveryIA = () => {
         </a>
       </div>
 
-      {/* Hero Section com Imagem de Fundo */}
-      <div 
-        className="relative min-h-screen bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.85), rgba(30, 58, 138, 0.85)), url(${BackgroundRestaurant})`
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-blue-900/80 to-slate-800/90"></div>
+      {/* Hero Section com Gradiente Moderno */}
+      <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 overflow-hidden">
+        {/* Padrão de fundo moderno */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/10 to-blue-600/10"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_50%)]"></div>
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl"></div>
+        </div>
+        
         <div className="container mx-auto px-4 relative z-10 py-20">
           <div className="flex justify-center mb-10">
             <img src={LogoIAX} alt="Logo IA-X" className="h-24 w-auto filter drop-shadow-2xl" />
