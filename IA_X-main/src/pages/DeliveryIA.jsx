@@ -448,7 +448,7 @@ const DeliveryIA = () => {
             Pronto para Revolucionar Seu Delivery?
           </h2>
           <p className="text-xl text-blue-200 max-w-4xl mx-auto mb-12 leading-relaxed">
-            Junte-se aos restaurantes que já transformaram suas operações com nossa solução de IA. 
+            Junte-se às empresas que já transformaram suas operações com nossa solução de IA. 
             Solicite seu orçamento personalizado e descubra como podemos impulsionar seu crescimento.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
