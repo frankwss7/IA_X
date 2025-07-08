@@ -6,10 +6,10 @@ const DeliveryIA = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-gray-900 to-blue-900 text-white py-20">
+      <div className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-10">
-            <img src={LogoIAX} alt="Logo IA-X" className="h-32 w-auto" />
+            <img src={LogoIAX} alt="Logo IA-X" className="h-24 w-auto" />
           </div>
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-10 md:mb-0">
@@ -32,44 +32,37 @@ const DeliveryIA = () => {
       </div>
 
       {/* Estatísticas */}
-      <div className="py-16 bg-gray-800 text-white">
+      <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gray-700 p-8 rounded-lg text-center shadow-md">
+            <div className="bg-blue-50 p-8 rounded-lg text-center shadow-md">
+              <div className="text-5xl font-bold text-green-500 mb-2">+60%</div>
+              <p className="text-gray-700 text-lg">Aumento médio no faturamento de delivery</p>
+            </div>
             <div className="bg-blue-50 p-8 rounded-lg text-center shadow-md">
               <div className="text-5xl font-bold text-green-500 mb-2">-35%</div>
-              <p className="text-gray-300 text-lg">Redução nos custos operacionais</p>
+              <p className="text-gray-700 text-lg">Redução nos custos operacionais</p>
             </div>
             <div className="bg-blue-50 p-8 rounded-lg text-center shadow-md">
               <div className="text-5xl font-bold text-green-500 mb-2">+45%</div>
-              <p className="text-gray-300 text-lg">Melhoria na satisfação do cliente</p>
+              <p className="text-gray-700 text-lg">Melhoria na satisfação do cliente</p>
             </div>
           </div>
         </div>
       </div>
 
       {/* Planos */}
-      <div className="py-16 bg-gray-900 text-white" id="planos">
+      <div className="py-16 bg-white" id="planos">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Soluções de Investimento</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Oferecemos soluções personalizadas para otimizar seu delivery.
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Planos de Investimento</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Oferecemos opções flexíveis para atender às necessidades de restaurantes de todos os portes.
             </p>
           </div>
           
-          <div className="flex flex-col items-center justify-center bg-gray-800 p-8 rounded-lg shadow-lg">
-            <h3 className="text-3xl font-bold text-white mb-4">Soluções Personalizadas para o seu Negócio</h3>
-            <p className="text-xl text-gray-300 text-center mb-8">
-              Entendemos que cada restaurante é único. Por isso, oferecemos planos de investimento flexíveis que se adaptam às suas necessidades específicas.
-            </p>
-            <p className="text-xl text-gray-300 text-center mb-8">
-              Nosso modelo de precificação inclui um Setup inicial e uma Recorrência mensal, garantindo um investimento justo e resultados contínuos.
-            </p>
-            <a href="#contato" className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300 text-center">
-              Solicitar Orçamento e Visita
-            </a>
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
               <div className="bg-blue-50 p-6 text-center border-b border-gray-200">
                 <h3 className="text-2xl font-bold text-blue-900">Essencial</h3>
                 <div className="text-4xl font-bold text-blue-900 mt-4">R$ 297<span className="text-lg font-normal text-gray-600">/mês</span></div>
