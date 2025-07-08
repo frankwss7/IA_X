@@ -2,10 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import LogoIAX from '../assets/MarcaIA-XCromada.png';
 
-import aiCustomerService from '../assets/ai_customer_service.jpg';
-import aiRestaurant from '../assets/ai_restaurant.jpg';
-import aiBrain from '../assets/ai_brain.jpg';
-
 const DeliveryIA = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -319,44 +315,4 @@ const DeliveryIA = () => {
 };
 
 export default DeliveryIA;
-
-
-
-      {/* Seção de Imagens */}
-      <div className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Como a IA Transforma seu Delivery</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Veja na prática como a inteligência artificial otimiza cada etapa do seu negócio.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="rounded-lg shadow-lg overflow-hidden">
-              <img src={aiCustomerService} alt="Atendimento ao Cliente com IA" className="w-full h-64 object-cover" />
-              <div className="p-6 bg-white">
-                <h3 className="text-xl font-bold text-blue-900 mb-2">Atendimento Automatizado</h3>
-                <p className="text-gray-700">Robôs de IA gerenciam pedidos e interagem com clientes 24/7, liberando sua equipe para tarefas estratégicas.</p>
-              </div>
-            </div>
-            <div className="rounded-lg shadow-lg overflow-hidden">
-              <img src={aiRestaurant} alt="Gestão de Restaurante com IA" className="w-full h-64 object-cover" />
-              <div className="p-6 bg-white">
-                <h3 className="text-xl font-bold text-blue-900 mb-2">Otimização Operacional</h3>
-                <p className="text-gray-700">Análise de dados em tempo real para otimizar estoque, rotas de entrega e eficiência da cozinha.</p>
-              </div>
-            </div>
-            <div className="rounded-lg shadow-lg overflow-hidden">
-              <img src={aiBrain} alt="Inteligência Artificial no Negócio" className="w-full h-64 object-cover" />
-              <div className="p-6 bg-white">
-                <h3 className="text-xl font-bold text-blue-900 mb-2">Decisões Estratégicas</h3>
-                <p className="text-gray-700">Insights poderosos baseados em IA para precificação, promoções e expansão de mercado.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
 
