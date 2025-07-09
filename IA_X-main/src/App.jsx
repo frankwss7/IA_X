@@ -63,8 +63,8 @@ function HomePage() {
               </Badge>
               
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Transforme sua 
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Liderança</span> com Inteligência Artificial
+                Transforme seu 
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Negócio</span> com Inteligência Artificial
               </h1>
               
               <p className="text-xl text-gray-600 leading-relaxed">
