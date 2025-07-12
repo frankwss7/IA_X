@@ -1,0 +1,46 @@
+name: Deploy do Site para Locaweb
+
+on:
+  push:
+    branches:
+      - main # Altere para a branch principal do seu projeto (ex: master, develop)
+
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do Código
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # Necessário para algumas ações de FTP que dependem do histórico completo
+
+    - name: Configurar Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20' # Use a versão do Node.js compatível com seu projeto
+
+    - name: Instalar Dependências
+      run: npm install --legacy-peer-deps # Use --legacy-peer-deps se tiver problemas de dependência
+
+    - name: Construir Projeto
+      run: npm run build
+
+    - name: Deploy para Locaweb via FTP
+      uses: locaweb/ftp-deploy@v1.0.0 # Verifique a versão mais recente no GitHub Marketplace
+      with:
+        ftp-host: ${{ secrets.FTP_HOST }}
+        ftp-user: ${{ secrets.FTP_USER }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: 'dist/' # Caminho da pasta gerada pelo 'npm run build'
+        remote-dir: '/web' # **CRÍTICO: Ajuste este caminho!**
+        # Este é o caminho no servidor FTP da Locaweb onde seus arquivos devem ser enviados.
+        # Para a maioria das hospedagens Locaweb, pode ser '/web', '/public_html', ou um caminho
+        # específico dentro do seu usuário FTP. Consulte a Locaweb ou teste para confirmar.
+        # Sua 
+
+
+Pasta Raiz completa fornecida pela Locaweb é `\\windows-pd-0001.fs.locaweb.com.br\WNFS-0002\iax1\web`. No contexto do FTP, você provavelmente precisará usar um caminho relativo a partir do diretório inicial do seu usuário FTP. Um teste comum é tentar `/web` ou `/public_html`. Se não funcionar, entre em contato com o suporte da Locaweb para obter o caminho exato para o diretório web via FTP.
+        # secure: true # Use se o seu FTP suportar FTPS (FTP sobre SSL/TLS)
+        # port: 21 # Porta padrão do FTP, pode ser omitida se for 21
